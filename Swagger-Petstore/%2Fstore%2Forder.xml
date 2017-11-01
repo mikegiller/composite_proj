@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/store/order" path="/store/order" id="11d430df-73d0-4a8b-bb11-ae5e02dcdb64" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="11d430df-73d0-4a8b-bb11-ae5e02dcdb64fileName">%2Fstore%2Forder</con:setting></con:settings><con:parameters/><con:method name="placeOrder" id="00f9bd63-2624-4e29-8e0d-0eed4a2617fb" method="POST"><con:description>
+Place an order for a pet</con:description><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent>{
+  "id" : 0,
+  "petId" : 0,
+  "quantity" : 0,
+  "shipDate" : "2015-07-20T15:49:04-07:00",
+  "status" : "placed",
+  "complete" : false
+}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:request name="Request 1" id="4e2eb581-cfe4-4e45-bcde-165f0330234d" mediaType="application/json"><con:settings/><con:endpoint>http://petstore.swagger.io</con:endpoint><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters/></con:request></con:method></con:resource>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/pet/findByStatus" path="/pet/findByStatus" id="440d6189-282c-41ff-8770-4bf8f39f7f59" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="440d6189-282c-41ff-8770-4bf8f39f7f59fileName">%2Fpet%2FfindByStatus</con:setting></con:settings><con:parameters/><con:method name="findPetsByStatus" id="c8958e13-a34d-4520-aa49-319ea07f27af" method="GET"><con:description>Multiple status values can be provided with comma separated strings
+Finds Pets by status</con:description><con:settings/><con:parameters><con:parameter required="true"><con:name>status</con:name><con:style>QUERY</con:style><con:description>Status values that need to be considered for filter</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent>[ {
+  "id" : 0,
+  "category" : {
+    "id" : 0,
+    "name" : "string"
+  },
+  "name" : "doggie",
+  "photoUrls" : [ "string" ],
+  "tags" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ],
+  "status" : "available"
+} ]</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:request name="Request 1" id="60067feb-788e-4413-9755-3c093f3e6629" mediaType="application/json"><con:settings/><con:endpoint>http://petstore.swagger.io</con:endpoint><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters/></con:request></con:method></con:resource>
