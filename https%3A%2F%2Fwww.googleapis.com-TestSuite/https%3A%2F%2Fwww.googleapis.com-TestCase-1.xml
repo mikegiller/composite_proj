@@ -1,7 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="0c611a30-fcf3-4aaf-a91c-048255065704" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="https://www.googleapis.com TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="0c611a30-fcf3-4aaf-a91c-048255065704fileName">https%3A%2F%2Fwww.googleapis.com-TestCase-1</con:setting><con:setting id="IncludeOverview">true</con:setting><con:setting id="IncludeResults">true</con:setting><con:setting id="FlowLayout">false</con:setting><con:setting id="ErrorDetails">true</con:setting><con:setting id="IncludeCoverage">true</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="API Call" id="1b75d0d3-37d9-4ca1-99e5-8d6a159443de"><con:settings/><con:config service="https://www.googleapis.com" resourcePath="/books/{v1}/volumes" methodName="Volumes" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="API Call" id="88649933-e18c-4465-b3d4-465b24b27966" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://www.googleapis.com</con:endpoint><con:request/><con:originalUri>https://www.googleapis.com/books/v1/volumes</con:originalUri><con:assertion type="JsonPath Match" id="65289bc3-7d76-47d2-af1c-27ae3205d59c" name="Match content of [totalItems]"><con:configuration><path>$['totalItems']</path><content>2082</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="96262116-8d86-4900-8a93-ef3d81cd6866" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="460b6da6-2c55-4d98-a563-49f484b8a2bd" name="Response SLA"><con:configuration><SLA>500</SLA></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="v1" value="v1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>v1</con:entry><con:entry>q</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="jdbc" name="JDBC Request" id="5fb7b067-a016-49f6-a2c9-c0a8892ce4c3" disabled="true"><con:settings><con:setting id="prettyPrintResponse">true</con:setting></con:settings><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dbConnectionName xsi:nil="true"/><con:query>select id
+<con:testCase id="0c611a30-fcf3-4aaf-a91c-048255065704" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="https://www.googleapis.com TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0c611a30-fcf3-4aaf-a91c-048255065704fileName">https%3A%2F%2Fwww.googleapis.com-TestCase-1</con:setting>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="API Call" id="1b75d0d3-37d9-4ca1-99e5-8d6a159443de">
+    <con:settings/>
+    <con:config service="https://www.googleapis.com" resourcePath="/books/{v1}/volumes" methodName="Volumes" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="API Call" id="88649933-e18c-4465-b3d4-465b24b27966" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://www.googleapis.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://www.googleapis.com/books/v1/volumes</con:originalUri>
+        <con:assertion type="JsonPath Match" id="65289bc3-7d76-47d2-af1c-27ae3205d59c" name="Match content of [totalItems]">
+          <con:configuration>
+            <path>$['totalItems']</path>
+            <content>2082</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Valid HTTP Status Codes" id="96262116-8d86-4900-8a93-ef3d81cd6866" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="460b6da6-2c55-4d98-a563-49f484b8a2bd" name="Response SLA">
+          <con:configuration>
+            <SLA>500</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <entry key="v1" value="v1" xmlns="http://eviware.com/soapui/config"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>v1</con:entry>
+          <con:entry>q</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="jdbc" name="JDBC Request" id="5fb7b067-a016-49f6-a2c9-c0a8892ce4c3" disabled="true">
+    <con:settings>
+      <con:setting id="prettyPrintResponse">true</con:setting>
+    </con:settings>
+    <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dbConnectionName xsi:nil="true"/>
+      <con:connectionProperties/>
+      <con:query>select id
 from items 
-where id = ${Request 1#Response#$['items'][0]['id']}</con:query><con:properties/></con:config></con:testStep><con:testStep type="restrequest" name="Mongo REST call" id="784134a8-47a2-4090-a671-3f7d3cbf69e4"><con:settings/><con:config service="http://maps.googleapis.com" resourcePath="/maps/api/geocode/{json}" methodName="Json" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Mongo REST call" id="a7d64a00-b3f9-4334-84f8-1a51405d8e11" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://maps.googleapis.com</con:endpoint><con:request>data</con:request><con:originalUri>http://maps.googleapis.com/maps/api/geocode/json</con:originalUri><con:assertion type="JsonPath Match" id="3dd032df-0d94-4adc-8e27-ad474cb45f65" name="Match content of [lat]"><con:configuration><path>$['results'][0]['geometry']['bounds']['northeast']['lat']</path><content>${API Call#Response#$['items'][0]['id']}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
-  <con:entry key="address" value="boston"/>
-  <con:entry key="json" value="json"/>
-</con:parameters><con:parameterOrder><con:entry>json</con:entry><con:entry>address</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>1b75d0d3-37d9-4ca1-99e5-8d6a159443de</con:testStepId><con:status>ENABLED</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>5fb7b067-a016-49f6-a2c9-c0a8892ce4c3</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>784134a8-47a2-4090-a671-3f7d3cbf69e4</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase>
+where id = ${Request 1#Response#$['items'][0]['id']}</con:query>
+      <con:properties/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Mongo REST call" id="784134a8-47a2-4090-a671-3f7d3cbf69e4">
+    <con:settings/>
+    <con:config service="http://maps.googleapis.com" resourcePath="/maps/api/geocode/{json}" methodName="Json" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Mongo REST call" id="a7d64a00-b3f9-4334-84f8-1a51405d8e11" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://maps.googleapis.com</con:endpoint>
+        <con:request>data</con:request>
+        <con:originalUri>http://maps.googleapis.com/maps/api/geocode/json</con:originalUri>
+        <con:assertion type="JsonPath Match" id="3dd032df-0d94-4adc-8e27-ad474cb45f65" name="Match content of [lat]">
+          <con:configuration>
+            <path>$['results'][0]['geometry']['bounds']['northeast']['lat']</path>
+            <content>${API Call#Response#$['items'][0]['id']}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="address" value="boston"/>
+          <con:entry key="json" value="json"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>json</con:entry>
+          <con:entry>address</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>1b75d0d3-37d9-4ca1-99e5-8d6a159443de</con:testStepId>
+    <con:status>ENABLED</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>5fb7b067-a016-49f6-a2c9-c0a8892ce4c3</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>784134a8-47a2-4090-a671-3f7d3cbf69e4</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>
