@@ -1,2 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:restMockAction name="/v2/pet" method="POST" resourcePath="/v2/pet" id="4938a44b-8a92-4d00-aa1b-adafdc624f32" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="4938a44b-8a92-4d00-aa1b-adafdc624f32fileName">%2Fv2%2Fpet</con:setting></con:settings><con:defaultResponse>Response 2</con:defaultResponse><con:dispatchStyle>QUERY_MATCH</con:dispatchStyle><con:dispatchConfig xsi:type="con:MockOperationQueryMatchDispatch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:query><con:name>newMatch</con:name><con:type>JSONPath</con:type><con:query>$['id']</con:query><con:match>123</con:match><con:response>Response 1</con:response></con:query></con:dispatchConfig><con:dispatchXPath/><con:parameterDispatcherRuleContainer/><con:routeScript/><con:response name="Response 1" id="456866e8-65b8-4625-802b-0fc098791931" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{"id":9205436248879968013,"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}</con:responseContent><con:header><con:name>Server</con:name><con:value>Jetty(9.2.9.v20150224)</con:value></con:header><con:header><con:name>Access-Control-Allow-Origin</con:name><con:value>*</con:value></con:header><con:header><con:name>Access-Control-Allow-Methods</con:name><con:value>GET, POST, DELETE, PUT</con:value></con:header><con:header><con:name>Connection</con:name><con:value>close</con:value></con:header><con:header><con:name>Date</con:name><con:value>Wed, 01 Nov 2017 18:51:38 GMT</con:value></con:header><con:header><con:name>Access-Control-Allow-Headers</con:name><con:value>Content-Type, api_key, Authorization</con:value></con:header></con:response><con:response name="Response 2" id="37d6a3bd-26ae-43f8-a14d-75bb562520b7" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{ "status" : "not added" }</con:responseContent></con:response></con:restMockAction>
+<con:restMockAction name="/v2/pet" method="POST" resourcePath="/v2/pet" id="4938a44b-8a92-4d00-aa1b-adafdc624f32" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4938a44b-8a92-4d00-aa1b-adafdc624f32fileName">%2Fv2%2Fpet</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 2</con:defaultResponse>
+  <con:dispatchStyle>QUERY_MATCH</con:dispatchStyle>
+  <con:dispatchConfig xsi:type="con:MockOperationQueryMatchDispatch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:query>
+      <con:name>newMatch</con:name>
+      <con:type>JSONPath</con:type>
+      <con:query>$['id']</con:query>
+      <con:match>123</con:match>
+      <con:response>Response 1</con:response>
+    </con:query>
+  </con:dispatchConfig>
+  <con:dispatchXPath/>
+  <con:parameterDispatcherRuleContainer/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="456866e8-65b8-4625-802b-0fc098791931" httpResponseStatus="200" mediaType="application/json" dataSource="">
+    <con:settings/>
+    <con:responseContent>{"id":9205436248879968013,"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}</con:responseContent>
+    <con:header>
+      <con:name>Server</con:name>
+      <con:value>Jetty(9.2.9.v20150224)</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>*</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Methods</con:name>
+      <con:value>GET, POST, DELETE, PUT</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>close</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Wed, 01 Nov 2017 18:51:38 GMT</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Headers</con:name>
+      <con:value>Content-Type, api_key, Authorization</con:value>
+    </con:header>
+  </con:response>
+  <con:response name="Response 2" id="37d6a3bd-26ae-43f8-a14d-75bb562520b7" httpResponseStatus="200" mediaType="application/json" dataSource="">
+    <con:settings/>
+    <con:responseContent>{ "status" : "not added" }</con:responseContent>
+  </con:response>
+</con:restMockAction>

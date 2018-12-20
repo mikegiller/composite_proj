@@ -1,2 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/employees" path="/employees" id="ef7e9d25-fe60-47fb-b211-64ce1b010312" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="ef7e9d25-fe60-47fb-b211-64ce1b010312fileName">%2Femployees</con:setting></con:settings><con:parameters/><con:method name="GET" id="d3542ccf-9a2f-4b9b-acf0-c5abae1719dc" method="GET"><con:description>Obtain information about employees from the database</con:description><con:settings/><con:parameters><con:parameter><con:name>bodyLimit</con:name><con:style>QUERY</con:style><con:description>The amount of employees returned</con:description></con:parameter><con:parameter><con:name>pageLimit</con:name><con:style>QUERY</con:style><con:description>The number of pages you want the information in</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:description>Successful pull of employees</con:description></con:representation><con:request name="Request 1" id="9e1f581a-615b-4a72-97c3-baae166b1349" mediaType="application/json"><con:settings/><con:endpoint>http://dev.foo.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method><con:method name="POST" id="a480d88f-a102-4a0a-b0f9-67034852e27f" method="POST"><con:description>Creates a new employee</con:description><con:settings/><con:parameters/><con:request name="Request 1" id="e324d1c7-b975-458f-9e83-92b7027ef2ac" mediaType="application/json"><con:settings/><con:endpoint>http://dev.foo.com</con:endpoint><con:parameters/></con:request></con:method></con:resource>
+<con:resource name="/employees" path="/employees" id="ef7e9d25-fe60-47fb-b211-64ce1b010312" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ef7e9d25-fe60-47fb-b211-64ce1b010312fileName">%2Femployees</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GET" id="d3542ccf-9a2f-4b9b-acf0-c5abae1719dc" method="GET">
+    <con:description>Obtain information about employees from the database</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>bodyLimit</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The amount of employees returned</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pageLimit</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The number of pages you want the information in</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Successful pull of employees</con:description>
+    </con:representation>
+    <con:request name="Request 1" id="9e1f581a-615b-4a72-97c3-baae166b1349" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.foo.com</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="POST" id="a480d88f-a102-4a0a-b0f9-67034852e27f" method="POST">
+    <con:description>Creates a new employee</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="e324d1c7-b975-458f-9e83-92b7027ef2ac" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.foo.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>
